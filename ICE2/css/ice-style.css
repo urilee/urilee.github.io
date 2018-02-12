@@ -1,0 +1,73 @@
+header{
+  text-align: right;
+  background-color: yellow;
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+}
+
+nav{
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li{
+  display: inline-block;
+
+}
+
+nav li a{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer {
+  background-color: green;
+  padding: 15px;
+}
+
+body {
+  background-color: grey;
+}
+
+#content{
+  text-align: center;
+  background-color: darkgrey;
+
+}
+
+#content h1 {
+  text-align: left;
+}
+
+#content p {
+  text-align: left;
+  margin-right: 355px;
+}
+
+#content li {
+  list-style: none;
+}
+
+aside {
+  text-align: left;
+  position: absolute;
+  right: 00px;
+  background-color: white;
+  padding-bottom: 255px;
+  list-style-position: inside;
+  padding-right: 25px;
+  background-image: url(http://images.indianexpress.com/2016/05/shakespeare_759_thinkstock.jpg);
+  background-size: 300px 100px;
+
+}
+
+
+
+*{
+  margin: 0px;
+}
