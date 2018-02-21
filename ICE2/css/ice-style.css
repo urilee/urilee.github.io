@@ -61,8 +61,10 @@ aside {
   padding-bottom: 255px;
   list-style-position: inside;
   padding-right: 25px;
-  background-image: url(http://images.indianexpress.com/2016/05/shakespeare_759_thinkstock.jpg);
-  background-size: 300px 100px;
+  background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 50%;
 
 }
 
