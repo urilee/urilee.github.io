@@ -37,6 +37,20 @@
 	</style>
 
 	<script type="text/javascript">
+
+	function upDate(previewPic){
+	  var preImg = previewPic.src;
+	  var preAlt = previewPic.alt;
+	  var img = document.getElementById('image');
+	  image.style.backgroundImage = 'url(' + preImg + ')';
+	  image.innerHTML = preAlt;
+
+	}
+
+	function unDo(){
+    image.style.backgroundImage = "";
+    image.innerHTML = "Hover over an image below.";
+	}
 	// I used Two functions here.  Starter idea at:
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
 	</script>
@@ -49,20 +63,20 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
+		<img class = "preview" tabindex = "1"
 			alt = "Styling with a Bandana"
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseleave = "unDo()" onfocus = "upDate(this)" onfocusout = "unDo()";
 			>
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
+		<img class = "preview" tabindex = "1"
 			alt = "With My Boy"
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseleave = "unDo()" onfocus = "upDate(this)" onfocusout = "unDo()";>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" tabindex = "1"
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" onmouseover = "upDate(this)" onmouseleave = "unDo()" onfocus = "upDate(this)" onfocusout = "unDo()";
 			alt = "Young Puppy";>
 </body>
 </html>
