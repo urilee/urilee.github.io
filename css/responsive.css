@@ -1,0 +1,151 @@
+@media screen and (max-width: 650px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    display: inline;
+  }
+
+}
+@media screen and (max-width: 650px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    display: inline;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+
+  li{
+    display: block;
+    text-decoration: none;
+  }
+}
+
+
+/*Responsive Design for projects and design*/
+@media only screen and (min-width: 650px){
+
+  .photo-grid{
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  .a {
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+  .b {
+    grid-column-start:2;
+    grid-column-end:3;
+  }
+  .c {
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+  .d {
+    grid-column-start:2;
+    grid-column-end:3;
+  }
+  .e {
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+  .f {
+    grid-column-start:2;
+    grid-column-end:3;
+  }
+  .g {
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+
+  .photo-cell{
+    width: 75%;
+  }
+  .text {
+    color: black;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 1000px){
+  .topnav a {display: none;}
+  .topnav a.icon {
+    display: inline;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    display: inline;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+
+  li{
+    display: inline;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+
+  .topnav ul li{
+    display: inline-block;
+  }
+  .topnav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .photo-grid{
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .a {
+      grid-column-start:1;
+      grid-column-end:2;
+    }
+    .b {
+      grid-column-start:2;
+      grid-column-end:3;
+    }
+    .c {
+      grid-column-start:3;
+      grid-column-end:4;
+    }
+    .d {
+      grid-column-start:1;
+      grid-column-end:2;
+    }
+    .e {
+      grid-column-start:2;
+      grid-column-end:3;
+    }
+    .f {
+      grid-column-start:3;
+      grid-column-end:4;
+    }
+    .g {
+      grid-column-start:1;
+      grid-column-end:2;
+    }
+
+    .text {
+      color: black;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+    }
+}

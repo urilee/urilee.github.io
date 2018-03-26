@@ -1,0 +1,202 @@
+html, body{
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+/*Navigation */
+header {
+  padding: 30px;
+}
+
+header.row {
+  display: flex;
+  align-items: center;
+}
+
+header h3 {
+  margin: 0;
+}
+header nav {
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 1.5em;
+  text-align: center;
+  color: #12406A;
+  font-size: 12px;
+  /*font-family: 'Montserrat', sans-serif;*/
+}
+
+.topnav a:hover {
+    color: #EB8F90;
+    text-decoration: none;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    color: #EB8F90;
+}
+
+.icon {
+    color: #12406A;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Body */
+.jumbo{
+  /*border-bottom: 5px solid #82BBB5;*/
+  background-color: #ECE4E2;
+  padding: 5em;
+  color: black;
+  margin-bottom: 4em;
+}
+
+/* Design */
+.thumb img {
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+}
+
+.photo-grid img {
+	  width: 100%;
+  	display: inline-block;
+    padding: 1em;
+}
+
+/*Projects */
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .2s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  text-align: center;
+  padding: 1em;
+}
+
+.thumb:hover .image {
+  opacity: 0.1;
+}
+
+.thumb:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+  display: inline-block;0
+}
+
+#myBtn {
+  color: black;
+  background-color: transparent;
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 2em;
+  font-size: 16px;
+  border: none;
+}
+
+#myBtn:hover{
+  opacity: 0.7;
+}
+
+/*About Me */
+#bio img {
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 2em;
+}
+
+#bio p {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#bio a {
+  color: #EB8F90;
+}
+
+/* Footer */
+.container footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  color: black;
+  background-color: #ECE4E2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+
+footer p{
+  padding: 1em;
+  margin: 1em;
+  text-align: left;
+}
+
+.fa {
+  padding: 1em;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1em;
+  float: right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+html {
+  background-color: white;
+}
