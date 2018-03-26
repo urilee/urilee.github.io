@@ -13,11 +13,6 @@ header {
   padding: 30px;
 }
 
-header.row {
-  display: flex;
-  align-items: center;
-}
-
 header h3 {
   margin: 0;
 }
@@ -27,39 +22,6 @@ header nav {
   justify-content: flex-end;
 }
 
-/*navigation */
-.topnav {
-    background-color: white;
-    overflow: hidden;
-}
-
-.nav-item {
-  display: inline-block;
-  position: relative;
-  padding: 0 1.5em;
-  text-align: center;
-  color: #12406A;
-  font-size: 12px;
-  /*font-family: 'Montserrat', sans-serif;*/
-}
-
-.topnav a:hover {
-    color: #EB8F90;
-    text-decoration: none;
-}
-
-/* Add an active class to highlight the current page */
-.active {
-    color: #EB8F90;
-}
-
-.icon {
-    color: #12406A;
-}
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
 
 /* Body */
 .jumbo{
@@ -68,6 +30,32 @@ header nav {
   padding: 5em;
   color: black;
   margin-bottom: 4em;
+}
+
+.arrows a {
+    text-decoration: none;
+    display: inline;
+    padding: 1em;
+}
+
+.arrows a:hover {
+    background-color: #EB8F90;
+    color: white;
+}
+
+.arrows .previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.arrows .next {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.arrows .round {
+    float: right;
+    font-size: 10px;
 }
 
 /* Design */
@@ -117,12 +105,13 @@ header nav {
   font-size: 16px;
   text-align: center;
   margin: auto;
-  display: inline-block;0
+  display: inline-block;
 }
 
 .myBtn {
   color: black;
   background-color: transparent;
+  text-decoration: none;
   width: 100%;
   display: block;
   margin: auto;
@@ -197,6 +186,74 @@ footer p{
   color: white;
 }
 
-html {
+
+.navbar-nav a {
+  color: #12406A;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.navbar-nav > .active > a{
+  color: #EB8F90;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: #f5f5f5;
+}
+.navbar-nav > li > a:hover {
+  color: #EB8F90;
   background-color: white;
 }
+
+.dropdown-menu > li > a:hover {
+    color: #EB8F90;
+    background-color: white;
+}
+
+.dropdown-menu > .active > a{
+    color: #EB8F90;
+    background-color: white;
+}
+.dropdown-menu > .active > a:hover {
+    color: #EB8F90;
+    background-color: white;
+}
+.navbar-toggle .icon-bar {
+    background-color: #EB8F90;
+    border: none;
+}
+
+/* old navigation
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 1.5em;
+  text-align: right;
+  color: #12406A;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+    color: #EB8F90;
+    text-decoration: none;
+}
+
+.active {
+    color: #EB8F90;
+}
+
+.icon {
+    color: #12406A;
+}
+
+.topnav .icon {
+    display: none;
+}
+*/
