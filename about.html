@@ -2,25 +2,50 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Uriel Lee | UX Designer</title>
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="responsive stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-	 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="css/responsive.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-		<header class = "container">
-			<div class = "topnav" id ="myTopnav">
-				<h3 class = "col-lg-4"> UL </h3>
-					<nav class="col-lg-8">
-									<a class="nav-item" href="index.html">PROJECTS</a>
-									<a class="nav-item"href="design.html"> DESIGN</a>
-									<a class="nav-item active" href="about.html">ABOUT</a>
-									<a class="nav-item"href="contact.html">CONTACT</a>
-					</nav>
-				</div>
-		</header>
+
+<header>
+	<nav class="navbar">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">UL</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+							<li><a href="index.html">All Projects</a></li>
+	            <li><a href="dfa.html">Design for America</a></li>
+	            <li><a href="ids.html">Interaction Design Studio</a></li>
+	            <li><a href="dc.html">Design Clinic</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="design.html">DESIGN</a></li>
+	        <li class = "active"><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</header>
 
 		<section class="jumbo">
 			<div class = "container">
@@ -32,27 +57,81 @@
 	</section>
 
 <div class = "container" id =bio>
-<div class = "col-lg-4">
-	<img src="img/me.jpeg" alt = "Uriel Lee taking photos in Santa Monica, CA.">
+	<div class = "col-lg-4">
+		<img src="img/me.jpeg" alt = "Uriel Lee taking photos in Santa Monica, CA.">
+	</div>
+	<div class ="col-lg-8">
+		<h2> About Me </h2>
+		<p> This June I will begin my full-time job as a Junior UX/UI Designer at Ignyte Group in Washington D.C.</p>
+		<br>
+		<p> In my spare time, I enjoy</p>
+			<ul>
+				<li> playing with my cat Zuko </li>
+				<li> attending shows/concerts </li>
+				<li> exploring new DIY projects on Pinterest </li>
+				<li> finding cheap ways to travel </li>
+				<li> watching trash TV aka MTV </li>
+			</ul>
+		<br>
+		<p>Thank you for visiting my page! If you have any questions feel free to reach out to me. </p>
+	</div>
 </div>
-<div class ="col-lg-8">
-	<h3> About Me </h3>
-	<p> This June I will begin my full-time job as a Junior UX/UI Designer at Ignyte Group in Washington D.C.</p>
-	<br>
-	<p> In my spare time, I enjoy</p>
-		<ul>
-			<li> playing with my cat Zuko </li>
-			<li> attending shows/concerts </li>
-			<li> exploring new DIY projects on Pinterest </li>
-			<li> finding cheap ways to travel </li>
-			<li> watching trash TV aka MTV </li>
-		</ul>
-	<br>
-	<p>Thank you for visiting my page! If you have any questions feel free to reach out to me. </p>
-</div>
+
+<br><br>
+
+<div class = "container">
+	<h2> Skills </h2>
+	<div class = "col-lg-4 col-md-4 col-sm-4 box x">
+		<div class = "front">
+			<p>Programming</p>
+		</div>
+		<div class = "back">
+				<ul>
+					<li>C++</li>
+					<li>Python</li>
+					<li>SQL</li>
+					<li>PHP</li>
+					<li>HTML/CSS</li>
+				</ul>
+		</div>
+	</div>
+
+	<div class = "col-lg-4 col-md-4 col-sm-4 box y">
+		<div class = "front">
+			<p>Design Tools</p>
+		</div>
+		<div class = "back">
+				<ul>
+					<li>Adobe Photoshop</li>
+					<li>Adobe Illustrator</li>
+					<li>Adobe Experience Design</li>
+					<li>Sketch</li>
+					<li>Invision</li>
+				</ul>
+		</div>
+	</div>
+
+	<div class = "col-lg-4 col-md-4 col-sm-4 box z">
+		<div class = "front">
+			<p>Desktop Tools</p>
+		</div>
+		<div class = "back">
+				<ul>
+					<li>Microsoft Office</li>
+					<li>Google Applications</li>
+					<li>Quick Base</li>
+					<li>Keynote</li>
+				</ul>
+		</div>
+	</div>
 
 </div>
 
+<script>
+$('.box').click(function(){
+  $(this).toggleClass('flip');
+});
+</script>
 
 </body>
 </html>

@@ -13,26 +13,11 @@
 	<link href="css/responsive.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+ <link rel="shortcut icon" href="img/favicon.ico" type="image/ico" />
 </head>
 <body>
 
-<!--
-<header class = "container">
-	<div class = "topnav" id ="myTopnav">
-		<h3 class = "col-lg-4 col-sm-4"> UL </h3>
-			<nav class="col-lg-8 col-sm-8">
-				<ul>
-							<li> <a class="nav-item active" href="index.html">PROJECTS</a></li>
-							<li><a class="nav-item" href="design.html">DESIGN</a></li>
-							<li><a class="nav-item" href="about.html">ABOUT</a></li>
-							<li><a class="nav-item" href="contact.html">CONTACT</a></li>
-							<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
-				</ul>
-			</nav>
-		</div>
-</header>
--->
-
+<header>
 <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -41,7 +26,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">UL</a>
+      <a class="navbar-brand" href="index.html"> <img src = "img/icon.png" alt = "personal icon"> </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -49,18 +34,20 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS<span class="caret"></span></a>
           <ul class="dropdown-menu">
 						<li class = "active"><a href="index.html">All Projects</a></li>
-            <li><a href="#">Design for America</a></li>
-            <li><a href="#">Interaction Design Studio</a></li>
-            <li><a href="#">Design Clinic</a></li>
+            <li><a href="dfa.html">Design for America</a></li>
+            <li><a href="ids.html">Interaction Design Studio</a></li>
+            <li><a href="dc.html">Design Clinic</a></li>
           </ul>
         </li>
-        <li><a href="#">DESIGN</a></li>
-        <li><a href="#">ABOUT</a></li>
-				<li><a href="#">CONTACT</a></li>
+        <li><a href="design.html">DESIGN</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
+</header>
+
 
     <section class="jumbo">
 			<div class = "container">
@@ -101,25 +88,22 @@
 	</div>
 </div>
 
-<footer class = "container">
-	<div class = "col-lg-2">
+<footer class = "foot">
 		<p> &copy; Uriel Lee </p>
-	</div>
-	<div class = "col-lg-10">
 		<a class="social" href="https://github.com/urilee" target="_blank"><i class="fa  fa-github fa"></i></a>
 		<a class="social" href="https://www.linkedin.com/in/uriel-lee-537738139/" target="_blank"><i class="fa fa-linkedin fa"></i></a>
-	</div>
 </footer>
 
 <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-        x.className += " responsive";
+        x.className += "responsive";
     } else {
         x.className = "topnav";
     }
 }
+
 </script>
 </body>
 </html>

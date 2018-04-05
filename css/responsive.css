@@ -1,4 +1,4 @@
-@media screen and (max-width: 650px) {
+/*@media screen and (max-width: 650px) {
   .topnav a {display: none;}
   .topnav a.icon {
     display: inline;
@@ -18,15 +18,48 @@
     text-align: left;
   }
 
-  li {
+  li
     display: block;
     text-decoration: none;
   }
 }
+*/
 
+@media only screen and (max-width: 768px){
+  .box {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: auto;
+  }
+  .search-grid{
+      display: inline-grid;
+      grid-template-columns: 1fr;
+    }
+
+  .search-grid img {
+    width: 100%;
+    padding: 1em;
+  }
+
+    .page1{
+      grid-column-start:1;
+      grid-column-end:2;
+    }
+
+    .page2{
+      grid-column-start:1;
+      grid-column-end:2;
+    }
+
+  .foot {
+    text-align: center;
+  }
+
+}
 
 /*Responsive Design for projects and design*/
-@media only screen and (min-width: 650px){
+@media only screen and (min-width: 768px) and (max-width: 991px){
 
   .photo-grid{
       display: inline-grid;
@@ -64,16 +97,41 @@
   .photo-cell{
     width: 75%;
   }
-  .text {
-    color: black;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+
+  .search-grid{
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+  .search-grid img {
+    width: 100%;
+    padding: 1em;
+  }
+
+    .page1{
+      grid-column-start:1;
+      grid-column-end:2;
+    }
+
+    .page2{
+      grid-column-start:2;
+      grid-column-end:3;
+    }
+
+
+  .box {
+    width: 250px;
+    height: 250px;
+  }
+
+  .foot {
     text-align: center;
   }
 
-}
 
-@media only screen and (max-width: 1000px){
+}
+/*
+@media only screen and (max-width: 992px){
   .topnav a {display: none;}
   .topnav a.icon {
     display: inline;
@@ -96,17 +154,9 @@
     text-decoration: none;
   }
 }
+*/
 
-@media only screen and (min-width: 1000px){
-
-  .topnav ul li{
-    display: inline-block;
-  }
-  .topnav ul{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
+@media only screen and (min-width: 992px){
 
   .photo-grid{
       display: inline-grid;
@@ -140,6 +190,35 @@
     .g {
       grid-column-start:1;
       grid-column-end:2;
+    }
+
+    .search-grid{
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+    .search-grid img {
+      width: 100%;
+      padding: 1em;
+    }
+
+      .page1{
+        grid-column-start:1;
+        grid-column-end:2;
+      }
+
+      .page2{
+        grid-column-start:2;
+        grid-column-end:3;
+      }
+
+    .box {
+        height: 250px;
+      }
+
+
+    footer p{
+        display: inline-block;
     }
 
 }
