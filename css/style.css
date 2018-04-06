@@ -361,6 +361,8 @@ iframe {
 
 .box .back {
   text-align: left;
+  color: white;
+  font-size: 14px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
