@@ -213,6 +213,7 @@ header {
 
 .myBtn {
   background-color: #a6c1ee;
+  width: 50%;
   border: none;
   display: block;
   margin: auto;
@@ -398,7 +399,9 @@ footer p{
     padding: 1em;
     margin: 1em;
 }
-
+.social{
+  color: transparent;
+}
 .fa {
   padding: 1em;
   width: 50px;
