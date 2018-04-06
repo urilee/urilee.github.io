@@ -348,6 +348,7 @@ iframe {
 .box .front {
   padding-top: 1em;
   font-size: 24px;
+  position: absolute;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
@@ -356,7 +357,7 @@ iframe {
 
 .box .back {
   text-align: left;
-
+  position: absolute;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
