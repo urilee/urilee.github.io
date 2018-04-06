@@ -1,3 +1,7 @@
+html, body{
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -27,24 +31,43 @@
     to   { opacity: 1; }
 }
 
-
-
-html, body{
-  background-color: white;
-  font-family: 'Montserrat', sans-serif;
-
-}
-
 h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h3 {
+h1 {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  line-height: 50px;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 2s; /* Firefox < 16 */
       -ms-animation: fadein 2s; /* Internet Explorer */
        -o-animation: fadein 2s; /* Opera < 12.1 */
           animation: fadein 2s;
+}
+
+h3 {
+  border-bottom: 2px solid white;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+header {
+  background-color: white;
+}
+
+.scroll{
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+.scroll a{
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 /*new nav*/
@@ -96,18 +119,15 @@ h3 {
 
 /* Body */
 .jumbo{
-  background-color: #ECE4E2;
+  background: linear-gradient(180deg, #ff9a9e, #fad0c4);
+  background-color: #EB8F90;
   padding: 5em;
-  color: black;
+  color: white;
   margin-bottom: 4em;
 }
 
-.jumbo p{
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-     -o-animation: fadein 2s; /* Opera < 12.1 */
-        animation: fadein 2s;
+.jumbo h3{
+  text-align: center;
 }
 
 .arrows a {
@@ -139,6 +159,22 @@ h3 {
     display: inline-block;
 }
 
+.intro {
+  color: white;
+  padding: 5em;
+  background: #41295a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: my-animation2 1.5s;
+}
+
+@keyframes my-animation2 {
+  from {transform: rotateX(270deg)}
+  to {
+  transform: rotateX(360deg)}
+}
+
+
 /* Design */
 .thumb img {
   width: 100%;
@@ -150,44 +186,25 @@ h3 {
 	  width: 100%;
   	display: inline-block;
     padding: 1em;
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 3s; /* Firefox < 16 */
-      -ms-animation: fadein 3s; /* Internet Explorer */
-       -o-animation: fadein 3s; /* Opera < 12.1 */
-          animation: fadein 3s;
 }
 
 /*Projects */
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .2s ease;
-  backface-visibility: hidden;
+.thumb {
+  padding-bottom: 2em;
 }
 
-.middle {
-  transition: .2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 10%;
-  left: 0%;
-  text-align: center;
-  padding: 1em;
+.thumb{
+  transition: transform .2s;
 }
-
 .thumb:hover .image {
-  opacity: 0.1;
-}
-
-.thumb:hover .middle {
-  opacity: 1;
+  -ms-transform: scale(0.9); /* IE 9 */
+  -webkit-transform: scale(0.9); /* Safari 3-8 */
+  transform: scale (0.9);
 }
 
 .text {
   color: black;
+  background-color: transparent;
   font-size: 16px;
   text-align: center;
   margin: auto;
@@ -195,43 +212,99 @@ h3 {
 }
 
 .myBtn {
-  color: black;
-  background-color: transparent;
-  width: 100%;
+  background-color: #a6c1ee;
+  border: none;
   display: block;
   margin: auto;
-  padding: 2em;
+  padding: 1em;
   font-size: 16px;
+}
+
+.myBtn2 {
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
   border: none;
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding: 1em;
+  font-size: 16px;
 }
 
 .myBtn a {
   text-decoration: none;
-  color: black;
+  color: white;
+  padding: 0.5em;
+  font-size: 12px;
 }
+
+.myBtn2 a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  font-size: 12px;
+}
+
+.card {
+  text-align: center;
+  padding: 1em;
+  padding-bottom: 3em;
+}
+
 
 .myBtn:hover{
   opacity: 0.7;
 }
-/*DFA*/
 
-.innernav a:hover{
-  color:#EB8F90;
+/*DFA*/
+.coming {
+  background-image: url("https://infohandle.net/wp-content/uploads/2017/10/5.png");
+  background-color: black;
+  width:100%;
+  height:300px;
+  color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.innernav {
+  color: #977cad;
+  font-size: 12px;
+  margin-right: 1em;
+  border-top: 0px solid #190629;
+  border-bottom: 0px solid #190629;
+  padding: 2em 1em;
+  transition: 0.5s all;
+}
+
+.innernav:hover{
+  text-decoration: none;
+  color: #977cad;
+  border-top: 2px solid #977cad;
+  border-bottom: 2px solid #977cad;
+  padding: 1em;
+  transition: 0.5s all;
 }
 
 #studio {
   padding-bottom: 1em;
 }
 
-.intro {
-  color: black;
-  padding-bottom: 1em;
-  border-bottom: 1px solid grey;
-}
-
 .hcw {
   padding: 1em 0;
   border-bottom: 1px solid grey;
+}
+
+/*Design Clinic*/
+.page {
+  width: 10%;
+}
+
+/*IDS*/
+iframe {
+  margin: auto;
+  display: block;
 }
 
 /*About Me */
@@ -251,10 +324,10 @@ h3 {
 }
 
 .box {
-  background-color: #ECE4E2;
+  background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
   height: 250px;
   border: 6px solid white;
-  color: black;
+  color: white;
   text-align: center;
   margin-top: 1em;
   cursor: pointer;
@@ -274,8 +347,8 @@ h3 {
 }
 
 .box:hover {
-  background-color: #EB8F90;
-  color: white;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  color: black;
 }
 
 
@@ -313,15 +386,12 @@ h3 {
   list-style: none;
 }
 
-/*Design Clinic*/
-.page {
-  width: 10%;
-}
 
 /* Footer */
 footer {
   color: black;
   background-color: #ECE4E2;
+  text-align: right;
 }
 
 footer p{
@@ -352,36 +422,44 @@ footer p{
   color: white;
 }
 
-
-/* old navigation
-.topnav {
-    background-color: white;
-    overflow: hidden;
+/* Contact*/
+#talk {
+  padding-bottom: 2em;
+}
+#talk p {
+  font-size: 18px;
+  text-decoration: none;
 }
 
-.nav-item {
+#talk a {
+  color: #EB8F90;
+}
+
+.hero-image {
+  background-image: url("../img/bricks.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  padding: 1em;
+}
+
+.boxy {
+  background-color: black;
+  opacity: 0.8;
+  width: 70%;
+  height: 25%;
+  margin: auto;
   display: inline-block;
-  position: relative;
-  padding: 0 1.5em;
-  text-align: right;
-  color: #12406A;
-  font-size: 12px;
+  text-align: center;
 }
 
-.topnav a:hover {
-    color: #EB8F90;
-    text-decoration: none;
-}
 
-.active {
-    color: #EB8F90;
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
 }
-
-.icon {
-    color: #12406A;
-}
-
-.topnav .icon {
-    display: none;
-}
-*/
