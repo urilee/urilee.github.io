@@ -168,6 +168,15 @@
       background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
       color: black;
     }
+    
+    .innernav:hover{
+      text-decoration: none;
+      color: #977cad;
+      border-top: 2px solid #977cad;
+      border-bottom: 2px solid #977cad;
+      padding: 1em;
+      transition: 0.5s all;
+    }
 
     footer p{
         display: inline-block;
