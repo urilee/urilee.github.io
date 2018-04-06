@@ -344,12 +344,6 @@ iframe {
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-
-}
-
-.box:hover {
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-  color: black;
 }
 
 
@@ -398,10 +392,7 @@ footer p{
     padding: 1em;
     margin: 1em;
 }
-.social{
-  color: transparent;
-  display: hidden;
-}
+
 .fa {
   padding: 1em;
   width: 50px;
