@@ -2,6 +2,18 @@ html, body{
   background-color: white;
   font-family: 'Montserrat', sans-serif;
 }
+
+.shapes {
+  background-image: url("../img/bricks.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hide {
+  border-top: 10px solid white;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -317,26 +329,18 @@ iframe {
 
 /*
 .box {
-  background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
   height: 250px;
-  border: 6px solid white;
-  color: white;
+  color: black;
   text-align: center;
-  margin-top: 1em;
   cursor: pointer;
-
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;*/
+  padding: 0;
+  margin-top: 1em;
 
 
-  /*transition effects */
-  /*
-  -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  -o-transition: -o-transform 0.5s;
-  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
 
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -344,8 +348,9 @@ iframe {
   transform-style: preserve-3d;
 }
 
+.box.flip{
+  border: 2px solid #EB8F90;
 
-.box.flip {
   -webkit-transform: rotateY( 180deg );
   -moz-transform: rotateY( 180deg );
   -o-transform: rotateY( 180deg );
@@ -355,6 +360,10 @@ iframe {
 .box .front {
   padding-top: 1em;
   font-size: 24px;
+  background: linear-gradient(180deg, #ff9a9e, #fad0c4);
+  color: white;
+  border: 2px solid white;
+
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
@@ -363,15 +372,12 @@ iframe {
 
 .box .back {
   text-align: left;
-  color: white;
-  font-size: 14px;
+
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
-}
 
-.box .back {
   -webkit-transform: rotateY( 180deg );
   -moz-transform: rotateY( 180deg );
   -o-transform: rotateY( 180deg );
@@ -381,7 +387,7 @@ iframe {
 .box .back ul {
   list-style: none;
 }
-*/
+
 
 /* Footer */
 footer {
@@ -430,13 +436,6 @@ footer p{
   color: #EB8F90;
 }
 
-.hero-image {
-  background-image: url("../img/bricks.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .hero-text {
   text-align: center;
   color: white;
@@ -446,13 +445,16 @@ footer p{
 .boxy {
   background-color: black;
   opacity: 0.8;
-  width: 70%;
+  width: 100%;
   height: 25%;
   margin: auto;
   display: inline-block;
   text-align: center;
 }
 
+.boxy p{
+  padding: 0.5em;
+}
 
 .hero-text button:hover {
   background-color: #555;
