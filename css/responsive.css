@@ -308,6 +308,10 @@
       transform: rotateY( 180deg );
     }
 
+    .front:hover {
+      color: black;
+    }
+
     .box .back ul {
       list-style: none;
     }

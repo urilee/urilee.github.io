@@ -300,6 +300,54 @@ header {
   border-bottom: 1px solid grey;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #EB8F90;
+    width: 70%;
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #EB8F90;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#soon {
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  border: none;
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding: 1em;
+  font-size: 16px;
+  color: white;
+}
+
+#soon:hover {
+  opacity: 0.7;
+}
+
 /*Design Clinic*/
 .page {
   width: 10%;
@@ -326,68 +374,6 @@ iframe {
 #bio a {
   color: #EB8F90;
 }
-
-/*
-.box {
-  height: 250px;
-  color: black;
-  text-align: center;
-  cursor: pointer;
-  padding: 0;
-  margin-top: 1em;
-
-
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
-  -o-transition: -o-transform 0.4s;
-  transition: transform 0.4s;
-
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.box.flip{
-  border: 2px solid #EB8F90;
-
-  -webkit-transform: rotateY( 180deg );
-  -moz-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg );
-}
-
-.box .front {
-  padding-top: 1em;
-  font-size: 24px;
-  background: linear-gradient(180deg, #ff9a9e, #fad0c4);
-  color: white;
-  border: 2px solid white;
-
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.box .back {
-  text-align: left;
-
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-  -webkit-transform: rotateY( 180deg );
-  -moz-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg );
-}
-
-.box .back ul {
-  list-style: none;
-}
-
 
 /* Footer */
 footer {
