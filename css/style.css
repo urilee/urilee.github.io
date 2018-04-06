@@ -199,7 +199,7 @@ header {
 .thumb:hover .image {
   -ms-transform: scale(0.9); /* IE 9 */
   -webkit-transform: scale(0.9); /* Safari 3-8 */
-  transform: scale (0.9);
+  transform: scale(0.9);
 }
 
 .text {
@@ -392,7 +392,6 @@ iframe {
 footer {
   color: black;
   background-color: #ECE4E2;
-  text-align: right;
 }
 
 footer p{
@@ -401,6 +400,7 @@ footer p{
 }
 .social{
   color: transparent;
+  display: hidden;
 }
 .fa {
   padding: 1em;
