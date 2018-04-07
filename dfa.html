@@ -107,10 +107,10 @@
 				<img src="img/dfa5.jpg" alt ="Uriel and her team discussing ideas">
 			</div>
 			<div class="thumb col-lg-4 col-md-4 col-sm-12">
-			  <img class="mySlides" src="img/dfa1.jpg" alt ="Uriel addresses concerns to her team" style="width:100%">
-			  <img class="mySlides" src="img/dfa2.jpg" alt ="Uriel and her teammate work on completing their prototype before testing" style="width:100%">
-			  <img class="mySlides" src="img/dfa3.jpg" alt="The team talking to a design professional." style="width:100%">
-				<img class="mySlides" src="img/dfa4.jpg" alt ="Uriel presenting her part of the pitch" style="width:100%">
+			  <img class="myImages" src="img/dfa1.jpg" alt ="Uriel addresses concerns to her team" style="width:100%">
+			  <img class="myImages" src="img/dfa2.jpg" alt ="Uriel and her teammate work on completing their prototype before testing" style="width:100%">
+			  <img class="myImages" src="img/dfa3.jpg" alt="The team talking to a design professional." style="width:100%">
+				<img class="myImages" src="img/dfa4.jpg" alt ="Uriel presenting her part of the pitch" style="width:100%">
 			</div>
 			<div class = "thumb col-lg-4 col-md-4 col-sm-12">
 				<img src="img/dfa6.jpg" alt ="Uriel and her group rehearsing.">
@@ -155,19 +155,19 @@
 </footer>
 
 <script>
-		var myIndex = 0;
+		var moveImg = 0;
 		carousel();
 
 		function carousel() {
 		    var i;
-		    var x = document.getElementsByClassName("mySlides");
+		    var x = document.getElementsByClassName("myImages");
 		    for (i = 0; i < x.length; i++) {
 		       x[i].style.display = "none";
 		    }
-		    myIndex++;
-		    if (myIndex > x.length) {myIndex = 1}
-		    x[myIndex-1].style.display = "block";
-		    setTimeout(carousel, 2000); // Change image every 2 seconds
+		    moveImg++;
+		    if (moveImg > x.length) {moveImg = 1}
+		    x[moveImg-1].style.display = "block";
+		    setTimeout(carousel, 1000);
 		}
 
 		$(document).ready(function(){
