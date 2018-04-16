@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Uriel Lee Final</title>
+<meta charset="UTF-8">
+<link rel ="stylesheet" href = "css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<h1> Uriel Lee</h1>
+<div class = "photo-grid">
+  <div class = "img1">
+    <img id= "img1" src = "images/examPic.JPG" alt= "Colleen and a lady getting her head eaten">
+  </div>
+  <div class = "img2">
+  <img id= "img2" src = "images/UMSI-logo.jpg" alt = "UMSI logo">
+  </div>
+</div>
+
+<div>
+<button onclick = "myFunction()"> Hide Image </button>
+<button onclick = "myFunction2()"> Show Image </button>
+</div>
+
+<script>
+
+function myFunction() {
+	var x = document.getElementById("img1");
+  var y = document.getElementById("img2")
+	if (x.style.display === "none") {
+	} else {
+    	x.style.display = "none";
+      y.style.display = "inline-block";
+      y.style.margin = "auto";
+	}
+}
+
+function myFunction2() {
+	var x = document.getElementById("img1");
+	if (x.style.display === "none") {
+    	x.style.display = "block";
+	}
+}
+
+</script>
+</body>
+</html>

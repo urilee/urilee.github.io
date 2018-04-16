@@ -1,0 +1,36 @@
+body{
+	display: flex;
+	flex-direction: column;
+  background-image: url("../images/sun-pattern.png");
+}
+
+img {
+  border: 5px solid blue;
+  display: inline-block;
+  width: 90%;
+  padding: 5%
+}
+
+
+
+@media only screen and (min-width: 0px){
+
+.photo-grid img {
+  display: inline-block;
+  margin: auto;
+}
+.photo-grid {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img1 {
+  grid-column-start:1;
+  grid-column-end:2;
+}
+
+.img2 {
+  grid-column-start:2;
+  grid-column-end:3;
+}
+}
