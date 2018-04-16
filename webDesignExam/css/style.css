@@ -6,19 +6,14 @@ body{
 
 img {
   border: 5px solid blue;
-  display: inline-block;
   width: 90%;
-  padding: 5%
+  padding: 5%;
 }
 
 
 
 @media only screen and (min-width: 0px){
 
-.photo-grid img {
-  display: inline-block;
-  margin: auto;
-}
 .photo-grid {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;

@@ -12,11 +12,11 @@
 <body>
 <h1> Uriel Lee</h1>
 <div class = "photo-grid">
-  <div class = "img1">
-    <img id= "img1" src = "images/examPic.JPG" alt= "Colleen and a lady getting her head eaten">
+  <div class = "photo-cell">
+    <img class = "img1" id= "img1" src = "images/examPic.JPG" alt= "Colleen and a lady getting her head eaten">
   </div>
-  <div class = "img2">
-  <img id= "img2" src = "images/UMSI-logo.jpg" alt = "UMSI logo">
+  <div class = "photo-cell">
+  <img class = "img2" id= "img2" src = "images/UMSI-logo.jpg" alt = "UMSI logo">
   </div>
 </div>
 
@@ -29,12 +29,12 @@
 
 function myFunction() {
 	var x = document.getElementById("img1");
-  var y = document.getElementById("img2")
+  var y = document.getElementById("img2");
 	if (x.style.display === "none") {
 	} else {
     	x.style.display = "none";
-      y.style.display = "inline-block";
-      y.style.margin = "auto";
+      y.style.float = "center";
+      y.style.margin = "0 auto";
 	}
 }
 
